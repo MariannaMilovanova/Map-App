@@ -6,5 +6,16 @@
         font-size: 35px;
         font-family: 'Playfair Display', serif;
         line-height: 35px;
+        padding-bottom: 15px;
+    }
+    .download-csv{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #2185d0;
+        position: absolute;
+        right: 35px;
+        a {
+            color: #fff !important;
+        }
     }
 }

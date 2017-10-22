@@ -1,15 +1,8 @@
 import React from 'react';
-import { Icon, Table } from 'semantic-ui-react'
+import { Icon, Table } from 'semantic-ui-react';
+import ExportCSV from './exportCSV';
+import _ from 'lodash';
 import './venuesList.scss';
-
-var myNamespace = {};
-
-myNamespace.round = function(number, precision) {
-    var factor = Math.pow(10, precision);
-    var tempNumber = number * factor;
-    var roundedTempNumber = Math.round(tempNumber);
-    return roundedTempNumber / factor;
-}
 
 const VenuesList = (props) => {
     if (!props.venues[0]) {
@@ -17,6 +10,7 @@ const VenuesList = (props) => {
     }
     return (
         <div className="venues-list-wrapper">
+        <ExportCSV venues={props.venues}/>
             <div className="venues-list-header">{props.venues.length} venues</div>
                 <Table  verticalAlign='middle' celled striped className='table' fixed compact structured>
                     <Table.Header>
@@ -35,8 +29,8 @@ const VenuesList = (props) => {
                                         <Table.Cell>{venue.name}</Table.Cell>
                                         <Table.Cell>{venue.location.city ? `${venue.location.city}, ${venue.location.country}`: `${venue.location.country}`}</Table.Cell>
                                         <Table.Cell>{venue.location.address}</Table.Cell>
-                                        <Table.Cell>{myNamespace.round(venue.location.lat, 4)}</Table.Cell>
-                                        <Table.Cell>{myNamespace.round(venue.location.lng, 4)}</Table.Cell>
+                                        <Table.Cell>{_.round(venue.location.lat, 4)}</Table.Cell>
+                                        <Table.Cell>{_.round(venue.location.lng, 4)}</Table.Cell>
                                     </Table.Row>
                                 )
                             })
