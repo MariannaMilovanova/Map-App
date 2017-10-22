@@ -3,16 +3,20 @@ import MapComponent from '../map/map';
 import Login from '../login/login';
 import UserData from '../login/userData';
 import VenuesList from '../venuesList/venuesList';
-import { searchVenues } from './homeActions';
+import Header from './header';
+import QueriesList from '../queriesList/queriesList'
+import { searchVenues, deleteQuery } from './homeActions';
 import { connect } from 'react-redux';
 import './home.scss';
 
 const HomePage = (props) => (
     <div className="home-page-wrapper">
+        <Header/>
         <div className="user">
             <UserData/>
             <Login/>
         </div>
+        <QueriesList searchHistory={props.searchHistory} deleteQuery={props.deleteQuery}/>
         <div className="map-wrapper">
             <MapComponent searchVenues={props.searchVenues} venues={props.venues}/>
             <VenuesList venues={props.venues}/>
@@ -22,12 +26,14 @@ const HomePage = (props) => (
 
 const mapStateToProps = (state) => {
     return ({
-        venues: state.homeReducer.venues
+        venues: state.homeReducer.venues,
+        searchHistory: state.homeReducer.searchHistory
     });
 };
 
 const mapDispatchToProps = {
-   searchVenues
+   searchVenues,
+   deleteQuery
 };
 
 

@@ -2,4 +2,7 @@
     position: absolute;
     top:-40px;
     width: 100%;
+    .ui.input input {
+        border: 1px solid rgba(34,36,38,.45);
+    }
 }

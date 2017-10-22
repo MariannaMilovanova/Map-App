@@ -12,7 +12,7 @@ const VenuesList = (props) => {
         <div className="venues-list-wrapper">
         <ExportCSV venues={props.venues}/>
             <div className="venues-list-header">{props.venues.length} venues</div>
-                <Table  verticalAlign='middle' celled striped className='table' fixed compact structured>
+                <Table verticalAlign='middle' celled striped className='table' fixed compact structured>
                     <Table.Header>
                         <Table.Row>
                             <Table.HeaderCell>Name</Table.HeaderCell>

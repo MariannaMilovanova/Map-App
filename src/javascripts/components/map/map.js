@@ -65,7 +65,7 @@ class MapComponent extends Component {
           onBoundsChanged={this.onBoundsChanged}
         >
           {this.state.venues.map((marker, index) => 
-            <GreenMarker marker={marker} key={index}/>)}
+            <GreenMarker marker={marker} key={index} />)}
         </GoogleMap>
       </div>
     )

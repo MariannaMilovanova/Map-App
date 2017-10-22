@@ -17,6 +17,7 @@ import './foursquareSearch.scss';
     }
     handleSubmit=(event)=>{
         event.preventDefault();
+        this.setState({term: ''})
         this.props.searchVenues(this.state.term, this.props.center, this.props.radius)
     }
  

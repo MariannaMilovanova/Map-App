@@ -18,3 +18,10 @@ export const searchVenues = (term, center, radius) => {
         meta: { term, center, radius }
     };
 }
+
+export const deleteQuery = (id) => {
+    return {
+        type: 'DELETE_SEARCH_QUERY_FROM_HISTORY',
+        id
+    };
+}
