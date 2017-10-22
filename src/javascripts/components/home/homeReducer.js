@@ -1,9 +1,11 @@
-const initState = {};
+const initState = {
+    venues:[]
+};
 
 function homeReducer(state = initState, action) {
     switch (action.type) {
-    case 'ADD': {
-        return;
+    case 'SEARCH_VENUES': {
+        return {...state, ...{venues: action.payload.data.response.venues}};
     }
     default:
         return state;

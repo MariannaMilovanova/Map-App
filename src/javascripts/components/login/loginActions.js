@@ -1,5 +1,13 @@
-export function loginAction() {
+export function userLogin(data) {
     return {
-        type: 'ADD',
+        type: 'LOGIN_GET_USER_DATA',
+        data
     };
 }
+
+export function userLogout() {
+    return {
+        type: 'LOG_OUT'
+    };
+}
+

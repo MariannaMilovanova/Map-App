@@ -1,13 +1,14 @@
 const initState = {};
 
-function loginReducer(state = initState, action) {
+function login(state = initState, action) {
     switch (action.type) {
-    case 'ADD': {
-        return;
-    }
+    case 'LOGIN_GET_USER_DATA': 
+        return {...state, ...{user: action.data}};
+     case 'LOG_OUT': 
+        return {...state, ...{user: null}};
     default:
         return state;
     }
 }
 
-export default loginReducer;
+export default login;
