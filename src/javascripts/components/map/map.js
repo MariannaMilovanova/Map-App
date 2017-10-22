@@ -24,7 +24,6 @@ class MapComponent extends Component {
         venues:venues
       }
     }
-
   componentWillReceiveProps(nextProps) {
     let venues = nextProps.venues.map(venue=> {
     let location = {};
@@ -37,21 +36,28 @@ class MapComponent extends Component {
   }
   
   onBoundsChanged = () => {
-    let mapBounds = this.refs.map.getBounds();
+    let bounds = this.refs.map.getBounds();
     let center = this.refs.map.getCenter();
     let newCenter = {};
     newCenter.lat = center.lat();
     newCenter.lng = center.lng();
+    let ne = bounds.getNorthEast();
+    // Calculate radius (in meters)
+    let radius = Math.round(google.maps.geometry.spherical.computeDistanceBetween(center, ne));
+
     this.setState({
-      bounds: mapBounds,
-      center: newCenter
+      bounds: bounds,
+      center: newCenter,
+      radius: radius
     })
   }
 
   render() {
     return (
       <div>
-        <FoursquareSearch searchVenues={this.props.searchVenues} center={this.state.center}/>
+        <FoursquareSearch searchVenues={this.props.searchVenues} 
+          center={this.state.center} 
+          radius={this.state.radius}/>
         <GoogleMap
           ref='map'
           defaultZoom={14}
