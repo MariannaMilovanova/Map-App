@@ -34,7 +34,7 @@ body {
 @media screen and (max-width:600px) {
     .home-page-wrapper { 
          .home-page-header {
-            padding: 70px 70px 80px 0px !important;
+            padding: 70px 70px 90px 0px !important;
             font-size: 28px !important;
         }
         .map-wrapper {
@@ -48,6 +48,11 @@ body {
 
 @media screen and (max-width:500px) {
     .home-page-wrapper {
+        .home-page-header {
+            padding: 70px 0px 90px 8% !important;
+            text-align: left !important;
+            font-size: 28px !important;
+        }
         .map-wrapper {
             width: 400px !important;
         }
@@ -60,9 +65,17 @@ body {
 @media screen and (max-width:400px) {
     .home-page-wrapper { 
         .home-page-header {
-            padding: 56px 140px 22px 10px !important;
-            font-size: 28px !important;
+            padding: 50px 0px 57px 20% !important;
+            font-size: 22px !important;
             line-height: 27px !important;
+            .home-page-welcome {
+                width: 50% !important;
+            }
+        }
+        .user-wrapper {
+            i.huge.icon {
+                font-size: 60px !important;
+            }
         }
         .map-wrapper {
             width: 300px !important;
