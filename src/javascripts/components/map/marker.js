@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Marker, InfoWindow } from 'react-google-maps';
+import React, {Component} from 'react';
+import {Marker, InfoWindow} from 'react-google-maps';
 
 class GreenMarker extends Component {
     constructor(props) {
@@ -10,17 +10,17 @@ class GreenMarker extends Component {
     }
     onToggleOpen = () => {
         this.setState({isOpen: !this.state.isOpen})
-    }
+    };
     render() {
         let markerImg = require('../../../images/map-icon.png');
-        const { marker } = this.props;
+        const {marker} = this.props;
         return (
             <div className="marker">
-                <Marker icon={markerImg} position={marker.position} onClick={this.onToggleOpen} />
-                {this.state.isOpen && 
-                    <InfoWindow onCloseClick={this.onToggleOpen} position={marker.position}>
-                        <div>{marker.title}</div>
-                    </InfoWindow>}
+                <Marker icon={markerImg} position={marker.position} onClick={this.onToggleOpen}/>
+                {this.state.isOpen &&
+                <InfoWindow onCloseClick={this.onToggleOpen} position={marker.position}>
+                    <div>{marker.title}</div>
+                </InfoWindow>}
             </div>
         );
     }

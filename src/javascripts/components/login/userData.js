@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Image, Icon } from 'semantic-ui-react';
-import { connect } from 'react-redux';
-import "./login.scss"
+import "./login.scss";
 
 const UserData = (props) => (
      <div className="user-wrapper">
@@ -12,5 +12,9 @@ const UserData = (props) => (
             : <Icon name='spy' size='huge' color='blue' />}
     </div>
 );
+
+UserData.propTypes = {
+    user: PropTypes.object
+};
 
 export default UserData;

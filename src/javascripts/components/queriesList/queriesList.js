@@ -8,7 +8,7 @@ import './queriesList.scss';
 class QueriesList extends Component {
     handleDelete = (id) => {
         this.props.deleteQuery(id);
-    }
+    };
     render() {
         if (!this.props.searchHistory[0]) {
             return <div></div>
