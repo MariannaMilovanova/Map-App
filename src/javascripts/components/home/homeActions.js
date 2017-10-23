@@ -6,7 +6,7 @@ export const searchVenues = (term, center, radius) => {
     const CLIENT_ID =`client_id=${FSQ_CLIENT_ID}`;
     const CLIENT_SECRET =`client_secret=${FSQ_SECRET}`;
     const CENTER = `ll=${center.lat},${center.lng}`;
-    const RADIUS = `radius=${radius}`
+    const RADIUS = `radius=${radius}`;
     const QUERY = `query=${term}`;
     const VERSION = `v=20171022`;
     const M = `m=foursquare`;
@@ -17,14 +17,14 @@ export const searchVenues = (term, center, radius) => {
         payload: request,
         meta: { term, center, radius }
     };
-}
+};
 
 export const deleteQuery = (id) => {
     return {
         type: 'DELETE_SEARCH_QUERY_FROM_HISTORY',
         id
     };
-}
+};
 
 export function userLogin(data) {
     return {

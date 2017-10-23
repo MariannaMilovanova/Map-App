@@ -6,7 +6,7 @@ import NotFound from '../components/notFound/notFound';
 
 export default (
     <Route path="/" component={App}>
-      <IndexRoute component={StartPage}/>
+        <IndexRoute component={StartPage}/>
         <Route path="404" component={NotFound}/>
         <Redirect from="*" to="404"/>
     </Route>
