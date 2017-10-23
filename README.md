@@ -6,5 +6,6 @@ How to install:
 2) cd Map-App
 3) npm i
 4) npm start
+5) go to http://localhost:4000/
 
 ![app sreenshots](https://github.com/MariannaMilovanova/Map-App/blob/master/src/images/screen_iPad_Pro.png)
