@@ -1,4 +1,5 @@
-const initState = {};
+const initState = {
+};
 
 function login(state = initState, action) {
     switch (action.type) {

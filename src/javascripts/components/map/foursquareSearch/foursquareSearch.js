@@ -9,9 +9,7 @@ import './foursquareSearch.scss';
             term: ''
         }
     }
- 
-    componentDidMount() {
-    }
+    
     handleChange=(event, data)=>{
         this.setState({term: data.value})
     }

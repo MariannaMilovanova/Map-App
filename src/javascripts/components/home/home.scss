@@ -11,17 +11,18 @@
         position: relative;
         font-family: 'Playfair Display', serif;
         font-size: 35px;
+        text-align: center;
     }
     .user {
         position: absolute;
         top:20px;
-        right: 40px;
+        right: 10%;
     }
     .map-wrapper {
         padding-top: 10px;
         margin-bottom: 10px;
         width: 800px;
-        height: 600px;
+        height: 500px;
         position: relative;
     }
 }
