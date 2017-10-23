@@ -11,7 +11,7 @@ const VenuesList = (props) => {
     return (
         <div className="venues-list-wrapper">
         <ExportCSV venues={props.venues}/>
-            <div className="venues-list-header">{props.venues.length} venues</div>
+            <div className="venues-list-header">{props.venues.length} venues <div className='clarification'>(of the last search)</div></div>
                 <Table verticalAlign='middle' celled striped className='table' fixed compact structured>
                     <Table.Header>
                         <Table.Row>

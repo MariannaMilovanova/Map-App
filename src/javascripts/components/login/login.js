@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { Icon } from 'semantic-ui-react';
-import { userLogin, userLogout } from './loginActions';
 import { OAuth_CLIENT_ID } from '../../../../config/apiKeys';
 import { connect } from 'react-redux';
 
 class Login extends Component {
-    componentDidMount() {
-        let userId = localStorage.getItem('active');
-        if (localStorage.getItem('active')) {
-            let user =  JSON.parse(localStorage.getItem(userId))
-            this.props.userLogin(user);    
-        }
-    }
     responseSuccess = (response) => {
-        localStorage.setItem(`${response.googleId}`,  JSON.stringify(response.profileObj));
-        localStorage.setItem('active', response.googleId);
-        this.props.userLogin(response.profileObj);
+        if ( !localStorage.getItem(`${response.googleId}`)) {
+            let userData = {...response.profileObj};
+            userData.searchHistory = [];
+            userData.venues = [];
+            localStorage.setItem(`${response.googleId}`,  JSON.stringify(userData));
+            localStorage.setItem('active', response.googleId);
+            this.props.userLogin(response.profileObj);
+        } else {
+            let user = JSON.parse(localStorage.getItem(`${response.googleId}`));
+            localStorage.setItem('active', response.googleId);
+            this.props.userLogin(user);
+        }
     }
     responseError = (response) => {
         console.log(response);
@@ -50,17 +51,5 @@ class Login extends Component {
         );
     } 
 }
-const mapStateToProps = (state) => {
-    return ({
-        user: state.login.user
-    });
-};
-const mapDispatchToProps = {
-   userLogin,
-   userLogout
-};
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Login);
+export default Login;

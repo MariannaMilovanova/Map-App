@@ -1,12 +1,13 @@
 .venues-list-wrapper{
     width: 100%;
     padding: 40px 15px;
-
     .venues-list-header{
         font-size: 35px;
         font-family: 'Playfair Display', serif;
         line-height: 35px;
-        padding-bottom: 15px;
+        .clarification {
+            font-size: 20px;
+        }
     }
     .download-csv{
         padding: 10px;

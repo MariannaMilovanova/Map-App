@@ -13,12 +13,4 @@ const UserData = (props) => (
     </div>
 );
 
-const mapStateToProps = (state) => {
-    return ({
-        user: state.login.user
-    });
-};
-
-export default connect(
-    mapStateToProps
-)(UserData);
+export default UserData;
