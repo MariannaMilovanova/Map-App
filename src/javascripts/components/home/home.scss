@@ -1,0 +1,28 @@
+.home-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+
+    .home-page-header {
+        height: 50px;
+        width: 100%;
+        padding: 70px 70px 110px 70px;
+        position: relative;
+        font-family: 'Playfair Display', serif;
+        font-size: 35px;
+        text-align: center;
+    }
+    .user {
+        position: absolute;
+        top:20px;
+        right: 10%;
+    }
+    .map-wrapper {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        width: 800px;
+        height: 500px;
+        position: relative;
+    }
+}
