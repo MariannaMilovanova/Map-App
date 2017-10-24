@@ -4,10 +4,16 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const config = require('./webpack.config.base');
+const vars = require('../env');
 
 const GLOBALS = {
     'process.env': {
-        'NODE_ENV': JSON.stringify('production')
+        'NODE_ENV': JSON.stringify('production'),
+        "KEY_MAP": JSON.stringify(vars.KEY_MAP),
+        "OAuth_CLIENT_ID": JSON.stringify(vars.OAuth_CLIENT_ID),
+        "OAuth_SECRET": JSON.stringify(vars.OAuth_SECRET),
+        "FSQ_CLIENT_ID": JSON.stringify(vars.FSQ_CLIENT_ID),
+        "FSQ_SECRET": JSON.stringify(vars.FSQ_SECRET)
     },
     __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
 };

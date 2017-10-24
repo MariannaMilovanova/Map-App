@@ -2,10 +2,16 @@ const merge = require('webpack-merge');
 const webpack = require('webpack');
 const config = require('./webpack.config.base');
 const path = require('path');
+const vars = require('../env');
 
 const GLOBALS = {
-    'process.env': {
-        'NODE_ENV': JSON.stringify('development')
+    "process.env": {
+        "NODE_ENV": JSON.stringify('development'),
+        "KEY_MAP": JSON.stringify(vars.KEY_MAP),
+        "OAuth_CLIENT_ID": JSON.stringify(vars.OAuth_CLIENT_ID),
+        "OAuth_SECRET": JSON.stringify(vars.OAuth_SECRET),
+        "FSQ_CLIENT_ID": JSON.stringify(vars.FSQ_CLIENT_ID),
+        "FSQ_SECRET": JSON.stringify(vars.FSQ_SECRET)
     },
     __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'true'))
 };

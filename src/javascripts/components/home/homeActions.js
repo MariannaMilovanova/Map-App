@@ -1,5 +1,7 @@
 import axios from 'axios';
-import { FSQ_CLIENT_ID, FSQ_SECRET } from '../../../../config/apiKeys';
+
+const FSQ_CLIENT_ID = process.env.FSQ_CLIENT_ID;
+const FSQ_SECRET = process.env.FSQ_SECRET;
 
 export const searchVenues = (term, center, radius) => {
     const ROOT_URL ='https://api.foursquare.com/v2/venues/search';

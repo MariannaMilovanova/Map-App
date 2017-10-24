@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {GoogleLogin, GoogleLogout} from 'react-google-login';
 import {Icon} from 'semantic-ui-react';
-import {OAuth_CLIENT_ID} from '../../../../config/apiKeys';
+
+const OAuth_CLIENT_ID = process.env.OAuth_CLIENT_ID;
 
 class Login extends Component {
     responseSuccess = (response) => {
