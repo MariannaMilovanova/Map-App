@@ -4,16 +4,15 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const config = require('./webpack.config.base');
-const vars = require('../env');
 
 const GLOBALS = {
     'process.env': {
         'NODE_ENV': JSON.stringify('production'),
-        "KEY_MAP": JSON.stringify(vars.KEY_MAP),
-        "OAuth_CLIENT_ID": JSON.stringify(vars.OAuth_CLIENT_ID),
-        "OAuth_SECRET": JSON.stringify(vars.OAuth_SECRET),
-        "FSQ_CLIENT_ID": JSON.stringify(vars.FSQ_CLIENT_ID),
-        "FSQ_SECRET": JSON.stringify(vars.FSQ_SECRET)
+               "KEY_MAP": JSON.stringify("AIzaSyDk7wxnvxDkzmojN_3ZRtTbl3WEXhRUjFA"),
+        "OAuth_CLIENT_ID": JSON.stringify("144480727570-nets66ahop6t2fpff8h6qmj7guv44vqv.apps.googleusercontent.com"),
+        "OAuth_SECRET": JSON.stringify("VEXgb4zLi2u7SB37mk8r-1ly"),
+        "FSQ_CLIENT_ID": JSON.stringify("FQH2NY2X2HZSLE4ZGZHGZA1QKHXQMORQBZBAGYIMHE0B3H0N"),
+        "FSQ_SECRET": JSON.stringify("CFBEJZRCRT35A01121FBIFI4GFQLHOWUUALYUKVX2ZTMUQWY")
     },
     __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
 };
