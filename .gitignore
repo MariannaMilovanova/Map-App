@@ -4,4 +4,4 @@ npm-debug.log*
 package-lock.json
 backend/files/
 backend/mongoQueries/
-env
+env.js
