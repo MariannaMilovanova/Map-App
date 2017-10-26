@@ -37,14 +37,14 @@ class Login extends Component {
                 <GoogleLogin
                     clientId={OAuth_CLIENT_ID}
                     buttonText='Login'
-                    className={this.props.user ? 'none' : 'active-btn'}
+                    className={this.props.user ? 'none' : 'login-btn'}
                     fetchBasicProfile={true}
                     onSuccess={this.responseSuccess}
                     onFailure={this.responseError}
                 />
                 <GoogleLogout
                     buttonText='Logout'
-                    className={this.props.user ? 'active-btn' : 'none'}
+                    className={this.props.user ? 'logout-btn' : 'none'}
                     onLogoutSuccess={this.logout}
                 />
             </div>

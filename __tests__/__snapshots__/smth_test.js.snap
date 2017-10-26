@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should search an item based on the value in the state 1`] = `
+<FoursquareSearch
+  searchVenues={[Function]}
+>
+  <div
+    className="fsq-input-search"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <Input
+        fluid={true}
+        onChange={[Function]}
+        placeholder="Search for venues"
+        type="text"
+        value=""
+      >
+        <div
+          className="ui fluid input"
+        >
+          <input
+            disabled={undefined}
+            key="text"
+            onChange={[Function]}
+            placeholder="Search for venues"
+            tabIndex={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </Input>
+    </form>
+  </div>
+</FoursquareSearch>
+`;
