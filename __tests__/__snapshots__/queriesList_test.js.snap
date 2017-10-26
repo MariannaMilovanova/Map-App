@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`img should have onClick function 1`] = `
+<QueriesList
+  deleteQuery={[Function]}
+  searchHistory={
+    Array [
+      Object {
+        "center": Object {
+          "lat": 35.6895,
+          "lng": 139.69169999999997,
+        },
+        "date": 2017-11-01T22:00:00.000Z,
+        "id": "59f1bb3e351e3d0c4b8a1d8f",
+        "radius": 3660,
+        "term": "bar",
+      },
+    ]
+  }
+>
+  <div
+    className="queries-list-wrapper"
+  >
+    <div
+      className="search-history-table"
+    >
+      <div>
+        <div
+          className="search-history-item"
+          key="0"
+        >
+          <div
+            className="search-history-cell-img"
+          >
+            <img
+              className="recycle-bin-img"
+              onClick={[Function]}
+              src="test-file-stub"
+            />
+            <div>
+              bar
+            </div>
+          </div>
+          <div
+            className="search-history-cell"
+          >
+            35.6895
+          </div>
+          <div
+            className="search-history-cell"
+          >
+            139.6917
+          </div>
+          <div
+            className="search-history-cell-radius"
+          >
+            4
+            km
+          </div>
+          <div
+            className="search-history-cell-date"
+          >
+            Nov 02, 2017 12:00 AM
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</QueriesList>
+`;
+
+exports[`should match its snapshot with query items 1`] = `
+<QueriesList
+  searchHistory={
+    Array [
+      Object {
+        "center": Object {
+          "lat": 35.6895,
+          "lng": 139.69169999999997,
+        },
+        "date": 2017-11-01T22:00:00.000Z,
+        "id": "59f1bb3e351e3d0c4b8a1d8f",
+        "radius": 3660,
+        "term": "bar",
+      },
+      Object {
+        "center": Object {
+          "lat": 35.6895,
+          "lng": 139.69169999999997,
+        },
+        "date": 2017-11-01T22:00:00.000Z,
+        "id": "59f1bb3e351e3d0c4b8a1d82",
+        "radius": 3660,
+        "term": "cinema",
+      },
+    ]
+  }
+>
+  <div
+    className="queries-list-wrapper"
+  >
+    <div
+      className="search-history-table"
+    >
+      <div>
+        <div
+          className="search-history-item"
+          key="0"
+        >
+          <div
+            className="search-history-cell-img"
+          >
+            <img
+              className="recycle-bin-img"
+              onClick={[Function]}
+              src="test-file-stub"
+            />
+            <div>
+              bar
+            </div>
+          </div>
+          <div
+            className="search-history-cell"
+          >
+            35.6895
+          </div>
+          <div
+            className="search-history-cell"
+          >
+            139.6917
+          </div>
+          <div
+            className="search-history-cell-radius"
+          >
+            4
+            km
+          </div>
+          <div
+            className="search-history-cell-date"
+          >
+            Nov 02, 2017 12:00 AM
+          </div>
+        </div>
+        <div
+          className="search-history-item"
+          key="1"
+        >
+          <div
+            className="search-history-cell-img"
+          >
+            <img
+              className="recycle-bin-img"
+              onClick={[Function]}
+              src="test-file-stub"
+            />
+            <div>
+              cinema
+            </div>
+          </div>
+          <div
+            className="search-history-cell"
+          >
+            35.6895
+          </div>
+          <div
+            className="search-history-cell"
+          >
+            139.6917
+          </div>
+          <div
+            className="search-history-cell-radius"
+          >
+            4
+            km
+          </div>
+          <div
+            className="search-history-cell-date"
+          >
+            Nov 02, 2017 12:00 AM
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</QueriesList>
+`;

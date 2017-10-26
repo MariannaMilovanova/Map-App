@@ -7,7 +7,7 @@ const UserData = (props) => (
      <div className="user-wrapper">
         {props.user
             ? <div>
-                <Image  src={props.user.imageUrl} avatar size='tiny' alt={props.user.name} title={props.user.name} />
+                <Image src={props.user.imageUrl} avatar size='tiny' alt={props.user.name} title={props.user.name} />
               </div>
             : <Icon name='spy' size='huge' color='blue' />}
     </div>
