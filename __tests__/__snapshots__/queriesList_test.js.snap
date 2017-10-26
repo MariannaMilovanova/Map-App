@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`img div should have onClick function 1`] = `
+exports[`img should have onClick function 1`] = `
 <QueriesList
   deleteQuery={[Function]}
   searchHistory={
@@ -10,7 +10,7 @@ exports[`img div should have onClick function 1`] = `
           "lat": 35.6895,
           "lng": 139.69169999999997,
         },
-        "date": 2017-10-26T14:38:16.390Z,
+        "date": 2017-11-01T22:00:00.000Z,
         "id": "59f1bb3e351e3d0c4b8a1d8f",
         "radius": 3660,
         "term": "bar",
@@ -60,7 +60,7 @@ exports[`img div should have onClick function 1`] = `
           <div
             className="search-history-cell-date"
           >
-            Oct 26, 2017 05:38 PM
+            Nov 02, 2017 12:00 AM
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ exports[`should match its snapshot with query items 1`] = `
           "lat": 35.6895,
           "lng": 139.69169999999997,
         },
-        "date": 2017-10-26T14:38:16.390Z,
+        "date": 2017-11-01T22:00:00.000Z,
         "id": "59f1bb3e351e3d0c4b8a1d8f",
         "radius": 3660,
         "term": "bar",
@@ -88,7 +88,7 @@ exports[`should match its snapshot with query items 1`] = `
           "lat": 35.6895,
           "lng": 139.69169999999997,
         },
-        "date": 2017-10-26T14:38:16.390Z,
+        "date": 2017-11-01T22:00:00.000Z,
         "id": "59f1bb3e351e3d0c4b8a1d82",
         "radius": 3660,
         "term": "cinema",
@@ -138,7 +138,7 @@ exports[`should match its snapshot with query items 1`] = `
           <div
             className="search-history-cell-date"
           >
-            Oct 26, 2017 05:38 PM
+            Nov 02, 2017 12:00 AM
           </div>
         </div>
         <div
@@ -176,7 +176,7 @@ exports[`should match its snapshot with query items 1`] = `
           <div
             className="search-history-cell-date"
           >
-            Oct 26, 2017 05:38 PM
+            Nov 02, 2017 12:00 AM
           </div>
         </div>
       </div>

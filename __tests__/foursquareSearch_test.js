@@ -23,3 +23,16 @@ it('should pass a selected value to the onChange function', () => {
 
     expect(toJson(component)).toMatchSnapshot();
 });
+
+
+it('should search venues based on the value in the state', () => {
+    const searchVenues = jest.fn();
+    const component = mount(<FoursquareSearch searchVenues={searchVenues} center={{lat: 35.6895, lng: 139.69169999999997}} radius={1000}/>);
+    const preventDefault = jest.fn();
+
+    component.setState({
+      term:'bar'
+    });
+    component.find('form').simulate('submit', { preventDefault});
+    expect(searchVenues).toBeCalledWith('bar', expect.anything(), expect.anything());
+});
