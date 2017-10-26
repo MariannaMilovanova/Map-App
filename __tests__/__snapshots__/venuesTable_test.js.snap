@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match its snapshot with venues found 1`] = `
+<VenuesList
+  venues={
+    Array [
+      Object {
+        "categories": Array [],
+        "id": "4b0587a0f964a5204a9d22e3",
+        "location": Object {
+          "address": "西新宿1-13-7",
+          "lat": 35.68943390510903,
+          "lng": 139.69629496770423,
+        },
+        "name": "New York Bar (ニューヨークバー)",
+        "verified": true,
+      },
+      Object {
+        "categories": Array [],
+        "id": "51d56c11498efa52e2de492a",
+        "labeledLatLngs": Array [],
+        "location": Object {
+          "address": "西新宿3-7-1-2",
+          "crossStreet": "パークハイアット東京 52F",
+          "lat": 35.68521128234544,
+          "lng": 139.69108508173935,
+        },
+        "name": "Bar Benfiddich",
+      },
+    ]
+  }
+>
+  <div
+    className="venues-list-wrapper"
+  >
+    <ExportCSV
+      venues={
+        Array [
+          Object {
+            "categories": Array [],
+            "id": "4b0587a0f964a5204a9d22e3",
+            "location": Object {
+              "address": "西新宿1-13-7",
+              "lat": 35.68943390510903,
+              "lng": 139.69629496770423,
+            },
+            "name": "New York Bar (ニューヨークバー)",
+            "verified": true,
+          },
+          Object {
+            "categories": Array [],
+            "id": "51d56c11498efa52e2de492a",
+            "labeledLatLngs": Array [],
+            "location": Object {
+              "address": "西新宿3-7-1-2",
+              "crossStreet": "パークハイアット東京 52F",
+              "lat": 35.68521128234544,
+              "lng": 139.69108508173935,
+            },
+            "name": "Bar Benfiddich",
+          },
+        ]
+      }
+    >
+      <div
+        className="download-csv"
+      >
+        <CSVLink
+          data={
+            Array [
+              Object {
+                "City": "undefined",
+                "Latitude": 35.68943390510903,
+                "Longitude": 139.69629496770423,
+                "Name": "New York Bar (ニューヨークバー)",
+                "StreetAddress": "西新宿1-13-7",
+              },
+              Object {
+                "City": "undefined",
+                "Latitude": 35.68521128234544,
+                "Longitude": 139.69108508173935,
+                "Name": "Bar Benfiddich",
+                "StreetAddress": "西新宿3-7-1-2",
+              },
+            ]
+          }
+          filename="my-file.csv"
+          separator=";"
+          target="_blank"
+        >
+          <a
+            download="my-file.csv"
+            href="data:text/csv;charset=utf-8,%EF%BB%BF%22Name%22;%22City%22;%22StreetAddress%22;%22Latitude%22;%22Longitude%22%0A%22New%20York%20Bar%20(%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%E3%83%90%E3%83%BC)%22;%22undefined%22;%22%E8%A5%BF%E6%96%B0%E5%AE%BF1-13-7%22;%2235.68943390510903%22;%22139.69629496770423%22%0A%22Bar%20Benfiddich%22;%22undefined%22;%22%E8%A5%BF%E6%96%B0%E5%AE%BF3-7-1-2%22;%2235.68521128234544%22;%22139.69108508173935%22"
+            target="_blank"
+          >
+            <Icon
+              as="i"
+              link={true}
+              name="download"
+              size="large"
+            >
+              <i
+                aria-hidden="true"
+                className="download large link icon"
+              />
+            </Icon>
+            <span
+              className="item__span"
+            >
+              Export to CSV
+            </span>
+          </a>
+        </CSVLink>
+      </div>
+    </ExportCSV>
+    <div
+      className="venues-list-header"
+    >
+      2
+       venues
+      <div
+        className="clarification"
+      >
+        (of the last search)
+      </div>
+    </div>
+    <Table
+      as="table"
+      celled={true}
+      className="table"
+      compact={true}
+      fixed={true}
+      striped={true}
+      structured={true}
+      verticalAlign="middle"
+    >
+      <table
+        className="ui celled fixed striped structured compact middle aligned table table"
+      >
+        <TableHeader
+          as="thead"
+        >
+          <thead
+            className=""
+          >
+            <TableRow
+              as="tr"
+              cellAs="td"
+            >
+              <tr
+                className=""
+              >
+                <TableHeaderCell
+                  as="th"
+                >
+                  <TableCell
+                    as="th"
+                    className=""
+                  >
+                    <th
+                      className=""
+                    >
+                      Name
+                    </th>
+                  </TableCell>
+                </TableHeaderCell>
+                <TableHeaderCell
+                  as="th"
+                >
+                  <TableCell
+                    as="th"
+                    className=""
+                  >
+                    <th
+                      className=""
+                    >
+                      City
+                    </th>
+                  </TableCell>
+                </TableHeaderCell>
+                <TableHeaderCell
+                  as="th"
+                >
+                  <TableCell
+                    as="th"
+                    className=""
+                  >
+                    <th
+                      className=""
+                    >
+                      Street Address
+                    </th>
+                  </TableCell>
+                </TableHeaderCell>
+                <TableHeaderCell
+                  as="th"
+                >
+                  <TableCell
+                    as="th"
+                    className=""
+                  >
+                    <th
+                      className=""
+                    >
+                      Latitude
+                    </th>
+                  </TableCell>
+                </TableHeaderCell>
+                <TableHeaderCell
+                  as="th"
+                >
+                  <TableCell
+                    as="th"
+                    className=""
+                  >
+                    <th
+                      className=""
+                    >
+                      Longitude
+                    </th>
+                  </TableCell>
+                </TableHeaderCell>
+              </tr>
+            </TableRow>
+          </thead>
+        </TableHeader>
+        <TableBody
+          as="tbody"
+        >
+          <tbody
+            className=""
+          >
+            <TableRow
+              as="tr"
+              cellAs="td"
+              key="0"
+            >
+              <tr
+                className=""
+              >
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    New York Bar (ニューヨークバー)
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    undefined
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    西新宿1-13-7
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    35.6894
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    139.6963
+                  </td>
+                </TableCell>
+              </tr>
+            </TableRow>
+            <TableRow
+              as="tr"
+              cellAs="td"
+              key="1"
+            >
+              <tr
+                className=""
+              >
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    Bar Benfiddich
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    undefined
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    西新宿3-7-1-2
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    35.6852
+                  </td>
+                </TableCell>
+                <TableCell
+                  as="td"
+                >
+                  <td
+                    className=""
+                  >
+                    139.6911
+                  </td>
+                </TableCell>
+              </tr>
+            </TableRow>
+          </tbody>
+        </TableBody>
+      </table>
+    </Table>
+  </div>
+</VenuesList>
+`;
